@@ -10,9 +10,9 @@ class Event
 
     private string $name;
 
-    private array $fields;
+    private iterable $fields;
 
-    public function __construct(string $namespace, string $name, array $fields)
+    public function __construct(string $namespace, string $name, iterable $fields)
     {
         $this->namespace = $namespace;
         $this->name = $name;
@@ -36,9 +36,9 @@ class Event
     }
 
     /**
-     * @return array
+     * @return EventField[]
      */
-    public function getFields(): array
+    public function getFields(): iterable
     {
         return $this->fields;
     }

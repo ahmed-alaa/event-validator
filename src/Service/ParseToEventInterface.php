@@ -6,7 +6,7 @@ namespace EventValidator\App\Service;
 
 use EventValidator\App\Entity\Event;
 
-interface ParseToEvent
+interface ParseToEventInterface
 {
     /**
      * @param array $event

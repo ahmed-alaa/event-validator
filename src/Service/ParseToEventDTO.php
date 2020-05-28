@@ -7,7 +7,7 @@ namespace EventValidator\App\Service;
 use EventValidator\App\Entity\Event;
 use EventValidator\App\Entity\EventField;
 
-class ParseToEventDTO implements ParseToEvent
+class ParseToEventDTO implements ParseToEventInterface
 {
     public function parse(array $event): Event
     {
