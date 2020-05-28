@@ -11,6 +11,6 @@ before_script:
   - composer install --prefer-source --no-interaction
 script:
   - ./vendor/bin/phpcs
-  - ./vendor/bin/phpunit -- --coverage-clover=coverage.xml
+  - composer test -- --coverage-clover=./tests/coverage/clover.xml
 after_success:
   - bash <(curl -s https://codecov.io/bash)
